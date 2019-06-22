@@ -16,6 +16,11 @@ html {
 }
 
 /* ------------------------------------ */
+/* -------------- Icons --------------- */
+/* ------------------------------------ */
+
+
+/* ------------------------------------ */
 /* --------- REUSABLE COMPONENTS------- */
 /* ------------------------------------ */
 
@@ -27,6 +32,17 @@ html {
 .header-row {
     max-width: 1000px;
     margin: 0 auto;
+}
+
+h1, 
+h2{
+    color: #262626;
+    font-family: 'NHaasGroteskDSStd-65Md';  
+}
+
+h1.taking-control-header{
+    margin-top: 100px;
+    font-weight: bold;
 }
 
 /* ------------------------------------ */
@@ -155,6 +171,55 @@ nav .sub-nav-menu{
     font-size: 13px;
     padding-bottom:10px;
 }
+
+
+/* ------------------------------------ */
+/* -------------- Content -------------- */
+/* ------------------------------------ */
+
+
+/* -------------- Taking Control Headline -------------- */
+.taking-control{
+    background-color: #F1F1F1;
+    height:38vh;
+}
+
+nav .pankuzu{
+    list-style: none;
+}
+
+#pankuzu li{
+    display: inline-block;
+    float: left;
+    font-size:14px;
+    font-family: 'NHaasGroteskTXStd-55Rg';
+    padding: 20px 5px 30px 5px;
+}
+
+#pankuzu li a:link,
+#pankuzu li a:visited{
+    color: #919191;
+}
+
+.shareIcon{
+    display: inline-flex;
+    color: #0C4AB5;
+    margin-top: 30px;
+}
+
+.introText{
+    font-size: 13px;
+    color:#141414;
+}
+
+.shareText {
+    color: #0C4AB5;
+    font-size: 14px;
+    font-weight: bold;
+    margin:2px 0 0 10px;
+}
+
+/* --------------  -------------- */
 /*
 
 #submit02{
