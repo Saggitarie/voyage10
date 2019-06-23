@@ -63,7 +63,61 @@ h1.taking-control-header {
 }
 
 h2{
-    font-size: 24px;
+    font-size: 20px;
+}
+
+/* ------------------------------------ */
+/* --------------- Icons--------------- */
+/* ------------------------------------ */
+.shareIcon {
+    display: inline-flex;
+    color: #0C4AB5;
+    margin-top: 30px;
+    padding-left: 20px;
+}
+
+.shareIcon a {
+    text-decoration: none;
+    font-size: 15px;
+}
+
+a .shareText{
+    text-decoration: none;
+    font-size: 15px;
+}
+
+/* ------------- Social Links --------- */
+
+.social-links{
+    display: inline-flex;
+    margin-top: 30px;
+    float: left;
+}
+
+.social-links li {
+    list-style: none;
+    display: inline-block;
+}
+
+
+.social-links li a:link,
+.social-links li a:visited {
+    padding: 0 20px 0 0;
+    color: #fff;
+    height: 15px;
+}
+
+.copyright,
+.copyright-copy{
+    font-size: 14px;
+}
+.copyright{
+    color: #FAFAFA;
+    padding: 30px 0 7px 0;
+}
+
+.copyright-copy{
+    padding-top: 10px;
 }
 
 /* ------------------------------------ */
@@ -213,7 +267,7 @@ nav .sub-nav-menu {
 
 
 /* ------ Taking Control Headline ----- */
-.takin-control {
+.taking-control {
     background-color: #F1F1F1;
     height: 40vh;
 }
@@ -234,12 +288,6 @@ nav .pankuzu {
 #pankuzu li a:visited {
     color: #919191;
     text-decoration: none;
-}
-
-.shareIcon {
-    display: inline-flex;
-    color: #0C4AB5;
-    margin-top: 30px;
 }
 
 .introText {
@@ -291,7 +339,7 @@ nav .pankuzu {
 }
 
 .takeControlText{
-    padding-right: 80px;
+    padding-right: 90px;
     padding: 30px 0;
 }
 
@@ -308,7 +356,7 @@ nav .pankuzu {
 /* ------------- Footer Links ------------ */
 footer{
     background-color: #141414;
-    height: 30vh;
+    height: 35vh;
     color: #FAFAFA;
 }
 
@@ -338,38 +386,4 @@ footer{
 .footer-links li .borderHeaderAbout {
     border-left: 0;
     padding-left: 0;
-}
-
-/* ------------- Social Links ------------ */
-
-.social-links{
-    display: inline-flex;
-    margin-top: 30px;
-    float: left;
-}
-
-.social-links li {
-    list-style: none;
-    display: inline-block;
-}
-
-
-.social-links li a:link,
-.social-links li a:visited {
-    padding: 0 20px 0 0;
-    color: #fff;
-    height: 15px;
-}
-
-.copyright,
-.copyright-copy{
-    font-size: 14px;
-}
-.copyright{
-    color: #FAFAFA;
-    padding: 30px 0 7px 0;
-}
-
-.copyright-copy{
-    padding-top: 10px;
 }
