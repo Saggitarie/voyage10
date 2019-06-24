@@ -46,9 +46,10 @@ html {
     margin: 0 auto;
 }
 
-.header-row {
-    max-width: 1000px;
+.pop-over-row {
+    padding: 0;
     margin: 0 auto;
+    font-size:14px;
 }
 
 h1,
@@ -291,32 +292,33 @@ input#submit{
 /* -------------- Popover -------------- */
 /* ------------------------------------ */
 
-/*popover__title {*/
-/*    font-size: 24px;*/
-/*    line-height: 36px;*/
-/*    text-decoration: none;*/
-/*    color: rgb(228, 68, 68);*/
-/*    text-align: center;*/
-/*    padding: 15px 0;*/
-/*}*/
-
 .newAndRiskSite {
     position: relative;
     margin-top: 1.5rem;
     display: inline-block;
 }
+
+.popover__title {
+    font-size: 12px;
+    line-height: 36px;
+    text-decoration: none;
+    text-align: left;
+    padding: 10px 15px;
+    border-bottom: solid 1px black;
+}
+
 .popover__content {
     opacity: 0;
     visibility: hidden;
     position: absolute;
     left: 0;
-    top:68px;
+    top:65px;
     transform: translate(0, 10px);
     background-color: #F1F1F1;
-    padding: 0 1000px 25px 0;
+    /*padding: 0 1000px 25px 0;*/
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
-    width: 600px;
-    height: 450px;
+    width: 1000px;
+    height: 300px;
 }
 .popover__content:before {
     position: absolute;
