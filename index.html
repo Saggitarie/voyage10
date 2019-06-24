@@ -25,24 +25,64 @@
             </ul>
         </nav>
         <form id="search" action="#">
-            <input type="text" placeholder="Search"><!--
-                 -->
-            <!--                <input id="submit02" type="submit" value="">-->
+            <input id="input02" type="text" placeholder="Search">
+            <input id="submit" type="image" src="resources/img/search.png" alt="Submit Form"/>
         </form>
     </div>
     <div class="row">
         <div class="sub-nav">
             <nav class="sub-nav-menu">
                 <ul class="sub-nav">
-                    <li class="newAndRiskSite"><a href="https://www.lloyds.com/news-and-risk-insight">News and risk
-                        insight</a></li>
-                    <li><a href="https://www.lloyds.com/market-directory">Market directory</a></li>
-                    <li><a href="https://www.lloyds.com/market-resources">Market Resources</a></li>
-                    <li><a href="https://www.lloyds.com/tools-and-systems">Tools and system</a></li>
-                    <li><a href="#https://www.lloyds.com/lloyds-around-the-world">Lloyd's around the world</a></li>
+                    <li class="newAndRiskSite popover__wrapper">
+                        <a href="https://www.lloyds.com/news-and-risk-insight">
+                            News and risk insight
+                        </a>
+                        <div class="popover__content">
+                            <h1 class="popover__title">News and risk insight.</h1>
+                            <div class="pop-over-row">
+                                <div class="col span-1-of-4">
+                                    Press Release
+                                </div>
+                                <div class="col span-1-of-4">
+                                    <a href="">News</a>
+                                </div>
+                                <div class="col span-1-of-4">
+                                    <a href="">Risk Reports</a>
+                                </div>
+                                <div class="col span-1-of-4">
+                                    <a href="">Events</a>
+                                </div>
+                                <div class="col span-1-of-4">
+                                    <a href="">Lloyd's subsidiary in Brussels</a>
+                                </div>
+                                <div class="col span-1-of-4">
+                                    <a href="">Lloyd's lab</a>
+                                </div>
+                                <div class="col span-1-of-4">
+                                    <a href="">City Risk Index</a>
+                                </div>
+                                <div class="col span-1-of-4">
+                                    <a href="">Consumer Alerts</a>
+                                </div>
+                                <div class="col span-1-of-4">
+                                    <a href="">Media Centre</a>
+                                </div>
+                                <div class="col span-1-of-4">
+                                    <a href="">Future at Lloyd's</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="others"><a href="https://www.lloyds.com/market-directory">Market directory</a></li>
+                    <li class="others"><a href="https://www.lloyds.com/market-resources">Market Resources</a></li>
+                    <li class="others"><a href="https://www.lloyds.com/tools-and-systems">Tools and system</a></li>
+                    <li class="others"><a href="#https://www.lloyds.com/lloyds-around-the-world">Lloyd's around the
+                        world</a></li>
                 </ul>
             </nav>
+
         </div>
+    </div>
     </div>
 </header>
 
@@ -171,5 +211,7 @@
     </div>
 </footer>
 <script src="https://unpkg.com/ionicons@4.5.10-1/dist/ionicons.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 </body>
 </html>

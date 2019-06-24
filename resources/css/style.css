@@ -46,9 +46,10 @@ html {
     margin: 0 auto;
 }
 
-.header-row {
-    max-width: 1000px;
+.pop-over-row {
+    padding: 0;
     margin: 0 auto;
+    font-size:14px;
 }
 
 h1,
@@ -69,16 +70,22 @@ h2{
 /* ------------------------------------ */
 /* --------------- Icons--------------- */
 /* ------------------------------------ */
-.shareIcon {
+.shareIcon{
     display: inline-flex;
     color: #0C4AB5;
     margin-top: 30px;
     padding-left: 20px;
 }
 
-.shareIcon a {
+.shareIcon a:hover,
+.shareIcon a:visited {
     text-decoration: none;
     font-size: 15px;
+    color: #0C4AB5;
+}
+
+.shareIcon a{
+    text-decoration: none;
 }
 
 a .shareText{
@@ -203,34 +210,40 @@ nav .sub-nav-menu {
     border-left: 1px solid #ccc;
 }
 
-/*.sub-nav li a:first-child {*/
-/*    border-left: 1px solid #ccc;*/
-/*}*/
+li.newAndRiskSite.popover__wrapper a{
+    display: block;
+    width: 100%;
+    padding: 15px;
+    color: #282F54;
+    background-color: #DFE0E6;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+}
 
-.sub-nav li a {
+.sub-nav li.others a {
     display: block;
     width: 100%;
     padding: 15px;
     text-decoration: none;
     font-size: 12px;
     font-weight: bold;
-    color: #fff;
+    color: #DFE0E6;
     background-color: #282F54;
 }
 
-.sub-nav li a:hover,
-.sub-nav li a:active{
+li.newAndRiskSite.popover__wrapper a:hover,
+li.newAndRiskSite.popover__wrapper a:active {
     background-color: #F1F1F1;
     color: #000;
     text-decoration: underline;
 }
 
-.sub-nav li a .borderHeaderAbout {
-    border-left: 0;
-    padding-left: 0;
-    color: #282F54;
-    background-color: #DFE0E6;
-
+.sub-nav li.others a:hover,
+.sub-nav li.others a:active{
+    background-color: #F1F1F1;
+    color: #000;
+    text-decoration: underline;
 }
 
 /* ------------- Search  ------------- */
@@ -241,6 +254,7 @@ nav .sub-nav-menu {
     border: 1px #b5b5b5;
     float: right;
     margin: 0;
+    position:relative;
 }
 
 #search input {
@@ -253,6 +267,7 @@ nav .sub-nav-menu {
     box-sizing: border-box;
     background-color: transparent;
     border-width: 0;
+    display: inline-block;
 }
 
 #search input::placeholder {
@@ -260,6 +275,74 @@ nav .sub-nav-menu {
     padding-bottom: 10px;
 }
 
+#input02{
+    border: none;
+    width: 170px;
+    padding-left: 10px;
+}
+
+input#submit{
+    width: 20%;
+    top: 3px;
+    right: 3px;
+    position: absolute;
+}
+
+/* ------------------------------------ */
+/* -------------- Popover -------------- */
+/* ------------------------------------ */
+
+.newAndRiskSite {
+    position: relative;
+    margin-top: 1.5rem;
+    display: inline-block;
+}
+
+.popover__title {
+    font-size: 12px;
+    line-height: 36px;
+    text-decoration: none;
+    text-align: left;
+    padding: 10px 15px;
+    border-bottom: solid 1px black;
+}
+
+.popover__content {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    top:65px;
+    transform: translate(0, 10px);
+    background-color: #F1F1F1;
+    /*padding: 0 1000px 25px 0;*/
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    width: 1000px;
+    height: 300px;
+}
+.popover__content:before {
+    position: absolute;
+    z-index: -1;
+    content: "";
+    right: calc(50% - 10px);
+    top: -5px;
+    border-style: solid;
+    border-width: 0 10px 0 10px;
+    border-color: transparent transparent #bfbfbf transparent;
+    transition-duration: 0s;
+    transition-property: transform;
+}
+
+.popover__wrapper:hover .popover__content {
+    z-index: 10;
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0, -20px);
+    transition: all 0.1s cubic-bezier(0.75, -0.02, 0.2, 0.97);
+}
+.popover__message {
+    text-align: center;
+}
 
 /* ------------------------------------ */
 /* -------------- Content ------------- */
