@@ -73,7 +73,7 @@ h2{
 .shareIcon{
     display: inline-flex;
     color: #0C4AB5;
-    margin-top: 30px;
+    margin-top: 25px;
     padding-left: 20px;
 }
 
@@ -93,7 +93,9 @@ a .shareText{
     font-size: 15px;
 }
 
+/* ------------------------------------ */
 /* ------------- Social Links --------- */
+/* ------------------------------------ */
 
 .social-links{
     display: inline-flex;
@@ -109,7 +111,7 @@ a .shareText{
 
 .social-links li a:link,
 .social-links li a:visited {
-    padding: 0 20px 0 0;
+    padding: 0 20px 0 10px;
     color: #fff;
     height: 15px;
 }
@@ -260,10 +262,10 @@ li.newAndRiskSite.popover__wrapper a:active {
 #search input {
     vertical-align: top;
     margin: 0px;
-    padding: 0 0 10px 10px;
+    padding: 10px 0 10px 10px;
     width: 100%;
     height: 100%;
-    font-size: 1.2em;
+    font-size: 0.6em;
     box-sizing: border-box;
     background-color: transparent;
     border-width: 0;
@@ -282,9 +284,9 @@ li.newAndRiskSite.popover__wrapper a:active {
 }
 
 input#submit{
-    width: 20%;
-    top: 3px;
-    right: 3px;
+    width: 25%;
+    top: 2px;
+    right: 4px;
     position: absolute;
 }
 
@@ -312,13 +314,12 @@ input#submit{
     visibility: hidden;
     position: absolute;
     left: 0;
-    top:65px;
+    top:70px;
     transform: translate(0, 10px);
     background-color: #F1F1F1;
-    /*padding: 0 1000px 25px 0;*/
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
     width: 1000px;
-    height: 300px;
+    height: 350px;
 }
 .popover__content:before {
     position: absolute;
